@@ -3,7 +3,7 @@ pipeline {
     agent any  // Run on any available Jenkins node
 
     environment {
-        REPO_URL = "git@github.com:ChaitanyaChupak/mini-k8s-demo.git"
+        REPO_URL = "https://github.com/ChaitanyaChupak/mini-k8s-demo.git"
         WORKDIR = "${WORKSPACE}/mini-k8s-demo"
         VENV_PATH = "${WORKSPACE}/venv"
         DOCKER_IMAGE = "mini-k8s-demo:latest"
